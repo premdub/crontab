@@ -19,7 +19,6 @@ print (cwd)
 
 # create a new dictionary with data
 df = pd.read_csv('https://query.data.world/s/vmrmccy7wb66inil533jtzpfnuzy7w')
-print(df)
 df.to_csv('/home/premdub/crontab/data.csv')
 df.to_csv('Users\premd\OneDrive\Desktop\HHA_507_\crontab\saved_data_locally.csv')
 
@@ -37,18 +36,3 @@ with open('/home/premdub/crontab/testFile_' + nowStr + '.txt', 'w') as f:
 now = time.time()
 endTime = time.strftime("%Y-%m-%d_$H:%M:%S", time.localtime(now))
 print ('Time that the program finished running: ', endTime)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

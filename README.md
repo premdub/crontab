@@ -6,7 +6,7 @@ Instructions for how the python files were automated using crontab :
 
 
 Within crontab : 
--data pull down from an API once a day (@ 18:15 military time) 
+-data pull down from an API once a day @ 08:00 pm (@ 20:00 military time) 
 -data pull down every Sunday night at 10:00pm (or 22:00 military time)
 -data pull down at the end of every quarter.
 
