@@ -4,7 +4,6 @@ import os
 import sys
 import time
 
-#df = pd.read_csv('https://query.data.world/s/vmrmccy7wb66inil533jtzpfnuzy7w')
 
 # get current time
 now = time.time()
