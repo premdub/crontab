@@ -3,6 +3,7 @@ import pandas as pd
 import os
 import sys
 import time
+
 #df = pd.read_csv('https://query.data.world/s/vmrmccy7wb66inil533jtzpfnuzy7w')
 
 # get current time
@@ -18,6 +19,9 @@ print (cwd)
 
 # create a new dictionary with data
 df = pd.read_csv('https://query.data.world/s/vmrmccy7wb66inil533jtzpfnuzy7w')
+print(df)
+df.to_csv('/home/premdub/crontab/data.csv')
+df.to_csv('Users\premd\OneDrive\Desktop\HHA_507_\crontab\saved_data_locally.csv')
 
 # get the current time
 now = time.time()
@@ -26,7 +30,7 @@ now = time.time()
 nowStr = time.strftime("%Y-%m-%d_$H:%M:%S", time.localtime(now))
 
 # create a new file in the current working directory
-with open('/testFile_' + nowStr + '.txt', 'w') as f:
+with open('/home/premdub/crontab/testFile_' + nowStr + '.txt', 'w') as f:
     f.write(str(df))
 
 # time end
@@ -35,11 +39,16 @@ endTime = time.strftime("%Y-%m-%d_$H:%M:%S", time.localtime(now))
 print ('Time that the program finished running: ', endTime)
 
 
-## EVERY SUNDAY AT 10 PM
-##  0 20 * * SUN
 
-## EVERY 6 AM ONCE A DAY
-##  0 6 * * *
 
-## EVERY QUARTER
-## 0 0 1 */3 *
+
+
+
+
+
+
+
+
+
+
+
