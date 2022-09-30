@@ -13,7 +13,7 @@ Within crontab :
 
 -data pull down at the end of every quarter.
 
-I haved added data pull down from an API every minute to ensure the it's running. 
+I haved added data pull down from an API every minute to ensure command run successfully. 
 After it's successfully ran, i added hashtag to stop.
 
 -report data is to be saveed to local data file (data.csv).
