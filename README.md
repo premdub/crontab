@@ -1,5 +1,6 @@
 # crontab
-- markdown file (.md) with instructions for how the python files were automated using crontab 
+
+Instructions for how the python files were automated using crontab :
 
 -Import dataset from NYC Department of Homeless Services Daily Report (https://query.data.world/s/vmrmccy7wb66inil533jtzpfnuzy7w)
 
