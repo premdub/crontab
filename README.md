@@ -23,63 +23,41 @@ to run every Sunday night at 10:00pm (or 22:00 military time)
 
 0 22 * * SUN usr/bin/python3 location/of/script (ex. \Users\premd\OneDrive\Desktop\HHA_507_\crontab\testFile.py)
 
-to run every quarter 
+to run every quarter on the 1st day @ 00:00
 
-0 3 13 */3 * usr/bin/python3 location/of/script (ex. \Users\premd\OneDrive\Desktop\HHA_507_\crontab\testFile.py)
+0 0 1 */3 * usr/bin/python3 location/of/script (ex. \Users\premd\OneDrive\Desktop\HHA_507_\crontab\testFile.py)
 
 ** If there is a print function in the script please add '> log.txt 2>&1 &' to the end of crontab file **
 
-Example: 0 3 13 */3 * usr/bin/python3 location/of/script > log.txt 2>&1 & (ex.\Users\premd\OneDrive\Desktop\HHA_507_\crontab\testFile.py > log.txt 2>&1 &)
+Example: 0 0 1 */3 * usr/bin/python3 location/of/script > log.txt 2>&1 & (ex.\Users\premd\OneDrive\Desktop\HHA_507_\crontab\testFile.py > log.txt 2>&1 &)
 
 crontab jobs can also be setup in virtual machine (GCP, Azure, or AWS)
-Create a virtual machine using Ubuntu Linux OS due to convenvience of OS
+      1. Create a virtual machine using Ubuntu Linux OS due to convenvience of OS
 
-Ensure all programs are install with sudo apt-get upgrade
+      2. Ensure all programs are install with sudo apt-get upgrade
 
-Clone the repo from GitHub
+      3. Clone the repo from GitHub
 
-Use crontab -h to check if crontab was installed
+      4. Use crontab -h to check if crontab was installed
 
-if not use sudo-apt get install crontab
+      if not use sudo-apt get install crontab
 
-cd into working directory
+      5. cd into working directory
 
-in this case it would be /crontab
+      in this case it would be /crontab
 
-Use nano cronJob.py to make last minute changes to script
+      6. Use nano cronJob.py to make last minute changes to script
 
-Input crontab -e in terminal shell
+      7.Input crontab -e in terminal shell
 
-input any crontab time/date with location of script
+      input any crontab time/date with location of script
 
-refer to Crontab jobs above
+      refer to Crontab jobs above
 
-save and close crontab
+      save and close crontab
 
-Successfully installed crontab
+      8.Successfully installed crontab
 
 Sources
 Data was pulled from NYC Department of Homeless Services Daily Report (https://query.data.world/s/vmrmccy7wb66inil533jtzpfnuzy7w)
 
-
-
-
-
-
-
-Within crontab : 
-<<<<<<< HEAD
--data pull down from an API once a day @ 08:00 pm (@ 20:00 military time) 
-=======
-
--data pull down from an API once a day (@ 18:15 military time) 
-
->>>>>>> 53633e3c25ed7cd006d40b7e53a0b6d238b80d4f
--data pull down every Sunday night at 10:00pm (or 22:00 military time)
-
--data pull down at the end of every quarter.
-
-I haved added data pull down from an API every minute to ensure command run successfully. 
-After it's successfully ran, i added hashtag to stop.
-
--report data is to be saveed to local data file (data.csv).
