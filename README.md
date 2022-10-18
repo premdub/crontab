@@ -29,7 +29,7 @@ to run every quarter
 
 ** If there is a print function in the script please add '> log.txt 2>&1 &' to the end of crontab file **
 
-Example: 0 3 13 */3 * usr/bin/python3 location/of/script > log.txt 2>&1 & (ex. /Users/lozo/Developer/AHI_Github/crontab/cronJob.py > log.txt 2>&1 &)
+Example: 0 3 13 */3 * usr/bin/python3 location/of/script > log.txt 2>&1 & (ex.\Users\premd\OneDrive\Desktop\HHA_507_\crontab\testFile.py > log.txt 2>&1 &)
 
 crontab jobs can also be setup in virtual machine (GCP, Azure, or AWS)
 Create a virtual machine using Ubuntu Linux OS due to convenvience of OS
@@ -63,14 +63,6 @@ Data was pulled from NYC Department of Homeless Services Daily Report (https://q
 
 
 
-
-# crontab
-df = pd.read_csv('https://query.data.world/s/vmrmccy7wb66inil533jtzpfnuzy7w')
-df.to_csv('/home/premdub/crontab/data.csv')
-df.to_csv('Users\premd\OneDrive\Desktop\HHA_507_\crontab\saved_data_locally.csv')
-
-
-Instructions for how the python files were automated using crontab :
 
 
 
