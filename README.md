@@ -19,7 +19,7 @@ So repo should contain two files:
 Crontab jobs (required for assignment)
 to run every day @ 08:00 pm (@ 20:00 military time) 
 
-0 3 * * * usr/bin/python3 location/of/script (ex. /Users/lozo/Developer/AHI_Github/crontab/cronJob.py)
+2 0 * * * usr/bin/python3 location/of/script (ex. /Users/lozo/Developer/AHI_Github/crontab/cronJob.py)
 
 to run every Sunday night at 10:00pm (or 22:00 military time)
 
@@ -67,6 +67,10 @@ Data was pulled from NYC Department of Homeless Services Daily Report (https://q
 
 
 # crontab
+df = pd.read_csv('https://query.data.world/s/vmrmccy7wb66inil533jtzpfnuzy7w')
+df.to_csv('/home/premdub/crontab/data.csv')
+df.to_csv('Users\premd\OneDrive\Desktop\HHA_507_\crontab\saved_data_locally.csv')
+
 
 Instructions for how the python files were automated using crontab :
 
