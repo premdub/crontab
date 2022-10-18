@@ -17,15 +17,15 @@ So repo should contain two files:
 Crontab jobs (required for assignment)
 to run every day @ 08:00 pm (@ 20:00 military time) 
 
-2 0 * * * usr/bin/python3 location/of/script (ex. /Users/lozo/Developer/AHI_Github/crontab/cronJob.py)
+2 0 * * * usr/bin/python3 location/of/script (ex. \Users\premd\OneDrive\Desktop\HHA_507_\crontab\testFile.py)
 
 to run every Sunday night at 10:00pm (or 22:00 military time)
 
-0 22 * * SUN usr/bin/python3 location/of/script (ex. /Users/lozo/Developer/AHI_Github/crontab/cronJob.py)
+0 22 * * SUN usr/bin/python3 location/of/script (ex. \Users\premd\OneDrive\Desktop\HHA_507_\crontab\testFile.py)
 
 to run every quarter 
 
-0 3 13 */3 * usr/bin/python3 location/of/script (ex. /Users/lozo/Developer/AHI_Github/crontab/cronJob.py)
+0 3 13 */3 * usr/bin/python3 location/of/script (ex. \Users\premd\OneDrive\Desktop\HHA_507_\crontab\testFile.py)
 
 ** If there is a print function in the script please add '> log.txt 2>&1 &' to the end of crontab file **
 
